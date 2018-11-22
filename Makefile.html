@@ -1,0 +1,23 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900">#Jessica Shaughnessy</font></i>
+<i><font color="#9A1900">#jis6cd</font></i>
+<i><font color="#9A1900">#11/27/2017</font></i>
+<i><font color="#9A1900">#Makefile</font></i>
+<i><font color="#9A1900">#lab section 106</font></i>
+
+<font color="#009900">CXXFLAGS =</font> -Wall -O<font color="#993399">2</font> -g
+<font color="#009900">CXX =</font> clang<font color="#990000">++</font>
+<font color="#009900">OFILES=</font> middleearth.o traveling.o
+<font color="#009900">DOXYGEN =</font> Doxyfile
+<b><font color="#000080">.SUFFIX:</font></b>.o .cpp
+
+<font color="#990000">a.out:</font> <font color="#009900">$(OFILES)</font>
+    <font color="#009900">$(CXX)</font> <font color="#009900">$(CXXFLAGS)</font> <font color="#009900">$(OFILES)</font>
+    doxygen <font color="#009900">$(DOXYGEN)</font>
+
+<font color="#990000">clean:</font>
+    -rm -f <font color="#990000">*</font>.o<font color="#990000">*~</font>
+</tt></pre>
